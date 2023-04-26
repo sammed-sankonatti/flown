@@ -39,6 +39,42 @@ const Posts = () => {
             userPicturePath:"https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-preview.jpg",
             likes : 1045,
             comments : 312
+        },
+        {
+            _id : "4",
+            userId : "4",
+            firstName : "marvel.studios",
+            lastName : "sankonatti",
+            description : "The endgame",
+            location : "New york, USA",
+            picturePath : "https://c4.wallpaperflare.com/wallpaper/535/901/196/the-avengers-avengers-endgame-avengers-endgame-iron-man-marvel-comics-hd-wallpaper-preview.jpg",
+            userPicturePath:"https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-preview.jpg",
+            likes : 1045,
+            comments : 312
+        },
+        {
+            _id : "5",
+            userId : "5",
+            firstName : "marvel.studios",
+            lastName : "sankonatti",
+            description : "Hawkeye the Modern karna",
+            location : "New york, USA",
+            picturePath : "https://c4.wallpaperflare.com/wallpaper/472/143/808/hawkeye-marvel-comics-the-avengers-jeremy-renner-wallpaper-preview.jpg",
+            userPicturePath:"https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-preview.jpg",
+            likes : 1045,
+            comments : 312
+        },
+        {
+            _id : "6",
+            userId : "6",
+            firstName : "marvel.studios",
+            lastName : "sankonatti",
+            description : "Best finisher on a mission",
+            location : "New york, USA",
+            picturePath : "https://c4.wallpaperflare.com/wallpaper/202/872/883/thanos-marvel-cinematic-universe-the-avengers-avengers-infinity-war-wallpaper-preview.jpg",
+            userPicturePath:"https://c4.wallpaperflare.com/wallpaper/301/256/1013/dubai-city-lights-8k-uae-wallpaper-preview.jpg",
+            likes : 1045,
+            comments : 312
         }
     ]
 
