@@ -29,8 +29,8 @@ const Posts = () => {
             comments : 45
         },
         {
-            _id : "2",
-            userId : "2",
+            _id : "3",
+            userId : "3",
             firstName : "sammed.sankonatti",
             lastName : "sankonatti",
             description : "mind blowing view!",

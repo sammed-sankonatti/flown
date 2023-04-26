@@ -3,6 +3,7 @@ import NavBar from '../../widgets/NavBar'
 import React from 'react'
 import Posts from '../postsPage'
 import UserWidget from '../../widgets/UserWidget'
+import FriendListWidget from '../../widgets/FriendListWidget'
 
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -25,6 +26,10 @@ const HomePage = () => {
         >
           <Posts />
         </Box>
+        <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
+          <FriendListWidget />
+        </Box>
+        
       </Box>
     </Box>
   )
