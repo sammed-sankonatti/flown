@@ -1,8 +1,8 @@
 import React from 'react'
-import WidgetWrapper from './WidgetWrapper'
-import FlexBetween from './FlexBetween'
-import UserImage from './UserImage'
-import { Box, IconButton, Typography, useTheme } from '@mui/material'
+import WidgetWrapper from '../components/WidgetWrapper'
+import FlexBetween from '../components/FlexBetween'
+import UserImage from '../components/UserImage'
+import { Box, IconButton, Typography, useMediaQuery, useTheme } from '@mui/material'
 import { PersonAddOutlined, PersonRemoveOutlined } from "@mui/icons-material";
 import {
   ChatBubbleOutlineOutlined,
@@ -31,9 +31,11 @@ const Post = ({
   const main = palette.neutral.main;
   const medium = palette.neutral.medium;
   const primary = palette.primary.main;
+
+  const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
   
   return (
-    <WidgetWrapper m="0rem 0">
+    <WidgetWrapper m={isNonMobileScreens ? "1rem 0" : "0"}>
       <FlexBetween padding="0rem 1rem 1rem 1rem">
         <FlexBetween gap="1rem">
           <UserImage image={userPicturePath} size="55px" />

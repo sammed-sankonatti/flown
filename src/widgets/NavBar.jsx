@@ -5,7 +5,7 @@ import { Search, Message, DarkMode, LightMode, Notifications, Help, Menu, Close}
 import { useDispatch, useSelector } from "react-redux";
 import { setMode } from '../features/themeSlice';
 import { useNavigate } from "react-router-dom";
-import FlexBetween from './FlexBetween';
+import FlexBetween from '../components/FlexBetween';
 
 
 const NavBar = () => {
