@@ -1,4 +1,4 @@
-import Post from '../../components/Post'
+import Post from '../../widgets/Post'
 import React from 'react'
 
 const Posts = () => {

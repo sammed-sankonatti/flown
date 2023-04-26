@@ -1,7 +1,8 @@
 import { Box, useMediaQuery } from '@mui/material'
-import NavBar from '../../components/NavBar'
+import NavBar from '../../widgets/NavBar'
 import React from 'react'
 import Posts from '../postsPage'
+import UserWidget from '../../widgets/UserWidget'
 
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -13,8 +14,11 @@ const HomePage = () => {
         // padding="2rem 6%"
         display={isNonMobileScreens ? "flex" : "block"}
         gap="0.5rem"
-        justifyContent="center"
+        justifyContent="space-evenly"
       >
+        <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
+          <UserWidget />
+        </Box>
         <Box
           flexBasis={isNonMobileScreens ? "42%" : undefined}
           mt={isNonMobileScreens ? undefined : "0rem"}
