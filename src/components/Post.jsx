@@ -33,15 +33,15 @@ const Post = ({
   const primary = palette.primary.main;
   
   return (
-    <WidgetWrapper m="2rem 0">
-      <FlexBetween>
+    <WidgetWrapper m="0rem 0">
+      <FlexBetween padding="0rem 1rem 1rem 1rem">
         <FlexBetween gap="1rem">
           <UserImage image={userPicturePath} size="55px" />
           <Box>
             <Typography
               color={main}
-              variant="h5"
-              fontWeight="500"
+              // variant="p"
+              fontWeight="400"
               sx={{
                 "&:hover": {
                   color: palette.primary.light,
@@ -60,34 +60,34 @@ const Post = ({
           <PersonAddOutlined sx={{ color: primaryDark }} />
         </IconButton>
       </FlexBetween>
-      <Typography color={main} sx={{ mt: "1rem" }}>
-        {description}
-      </Typography>
       <img
           width="100%"
           height="auto"
           alt="post"
-          style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
+          style={{ borderRadius: "0rem", marginTop: "0.75rem", objectFit :"contain" }}
           src={picturePath}
         />
-      <FlexBetween mt="0.25rem">
-        <FlexBetween gap="1rem">
+      <Typography color={main} sx={{ mt: "1rem", ml:"1rem", display:"flex" }}>
+        <Typography sx={{fontWeight:"0"}}>{ name } &nbsp; </Typography>  {description}
+      </Typography>
+      <FlexBetween mt="0.25rem" ml="0.5rem" mr="0.5rem">
+        <FlexBetween gap="0rem">
           <FlexBetween gap="0.3rem">
             <IconButton>
               {true ? (
-                <FavoriteOutlined sx={{ color: primary }} />
-              ) : (
                 <FavoriteBorderOutlined />
+              ) : (
+                <FavoriteOutlined />
               )}
             </IconButton>
-            <Typography>{likes}</Typography>
+            {/* <Typography>{likes}</Typography> */}
           </FlexBetween>
 
           <FlexBetween gap="0.3rem">
             <IconButton>
               <ChatBubbleOutlineOutlined />
             </IconButton>
-            <Typography>{comments}</Typography>
+            {/* <Typography>{comments}</Typography> */}
           </FlexBetween>
         </FlexBetween>
 

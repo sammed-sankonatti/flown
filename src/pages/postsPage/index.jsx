@@ -7,7 +7,7 @@ const Posts = () => {
         {
             _id : "1",
             userId : "1",
-            firstName : "princess",
+            firstName : "deeksha.jain",
             lastName : "sankonatti",
             description : "my source of inspiration!",
             location : "Bangalore",
@@ -19,7 +19,7 @@ const Posts = () => {
         {
             _id : "2",
             userId : "2",
-            firstName : "Alex Xu",
+            firstName : "sammed.sankonatti",
             lastName : "sankonatti",
             description : "live the moment!",
             location : "New york, USA",
@@ -31,7 +31,7 @@ const Posts = () => {
         {
             _id : "2",
             userId : "2",
-            firstName : "Alex Xu",
+            firstName : "sammed.sankonatti",
             lastName : "sankonatti",
             description : "mind blowing view!",
             location : "New york, USA",
