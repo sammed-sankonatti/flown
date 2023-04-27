@@ -5,6 +5,7 @@ import Posts from '../postsPage'
 import UserWidget from '../../widgets/UserWidget'
 import FriendListWidget from '../../widgets/FriendListWidget'
 import SponsoredAd from '../../widgets/SponsoredAd'
+import Footer from '../../widgets/Footer'
 
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
@@ -30,9 +31,9 @@ const HomePage = () => {
         </Box>
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
           <SponsoredAd />
-        </Box>
-        
+        </Box> 
       </Box>
+      <Footer />
     </Box>
   )
 }
