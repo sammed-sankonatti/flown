@@ -6,8 +6,12 @@ import { useSelector } from 'react-redux';
 import { createTheme } from '@mui/material/styles';
 import {themeSettings} from "../theme"
 
+import NavBar from './widgets/NavBar'
 import HomePage from './pages/homePage';
 import LoginPage from './pages/loginPage';
+import UserWidget from './widgets/UserWidget';
+import SponsoredAd from './widgets/SponsoredAd';
+import Footer from './widgets/Footer';
 
 function App() {
 
@@ -19,10 +23,14 @@ function App() {
       <Router>
         <ThemeProvider theme={theme}>
         <CssBaseline />
+          <NavBar />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/profile" element={<UserWidget />} />
+            <Route path="/sponsors" element={<SponsoredAd />} />
           </Routes>
+          <Footer />
         </ThemeProvider>
       </Router>
     </div>

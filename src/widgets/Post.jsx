@@ -72,7 +72,7 @@ const Post = ({
       <Typography color={main} sx={{ mt: "1rem", ml:"1rem", display:"flex" }}>
         <Typography sx={{fontWeight:"0"}}>{ name } &nbsp; </Typography>  {description}
       </Typography>
-      <FlexBetween mt="0.25rem" ml="0.5rem" mr="0.5rem">
+      <FlexBetween mt="0.25rem" pl="0.5rem" pr="0.5rem">
         <FlexBetween gap="0rem">
           <FlexBetween gap="0.3rem">
             <IconButton>
