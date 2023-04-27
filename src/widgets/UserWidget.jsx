@@ -27,7 +27,7 @@ const UserWidget = () => {
     const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
 
   return (
-    <WidgetWrapper borderRadius= "0.75rem" sx={{padding : "1.5rem 1.5rem 0.75rem 1.5rem" }} m={isNonMobileScreens ? "1rem 0" : "0"} >
+    <WidgetWrapper flexBasis={isNonMobileScreens ? "26%" : undefined}  borderRadius= "0rem" sx={{padding : "1.5rem 1.5rem 0.75rem 1.5rem" }} m={isNonMobileScreens ? "1rem 0" : "3rem 0.1rem"} >
         <FlexBetween gap="0.5rem" pb="1rem">
             <FlexBetween gap="1rem">
                 <UserImage image="https://cdn.pixabay.com/photo/2015/09/22/01/30/lights-951000_960_720.jpg" />

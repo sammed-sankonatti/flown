@@ -27,7 +27,7 @@ const SponsoredAd = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
 
   return (
-    <WidgetWrapper borderRadius= "0.75rem" sx={{padding : "1.5rem 1.5rem 0.75rem 1.5rem" }} m={isNonMobileScreens ? "1rem 0" : "0"}>
+    <WidgetWrapper borderRadius= "0rem" sx={{padding : "1.5rem 1.5rem 0.75rem 1.5rem" }} m={isNonMobileScreens ? "1rem 0" : "2rem 0"}>
       <FlexBetween>
         <Typography color={dark} variant="h5" fontWeight="500">
           Sponsored
@@ -37,7 +37,7 @@ const SponsoredAd = () => {
       <Box display="flex" flexDirection="column">
       {
         advertisements.map((advertisement, i)=> (
-          <Box key={i}>
+          <Box key={i} mb="1rem">
             <img
               width="100%"
               height="auto"
