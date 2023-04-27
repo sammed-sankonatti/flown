@@ -37,7 +37,7 @@ const SponsoredAd = () => {
       <Box display="flex" flexDirection="column">
       {
         advertisements.map((advertisement, i)=> (
-          <>
+          <Box key={i}>
             <img
               width="100%"
               height="auto"
@@ -52,7 +52,7 @@ const SponsoredAd = () => {
             <Typography color={medium} m="0.5rem 0">
               {advertisement.description}
             </Typography>
-          </>
+          </Box>
         ))
       }
 
